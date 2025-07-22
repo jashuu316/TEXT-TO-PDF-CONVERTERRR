@@ -1,22 +1,30 @@
+<!-- FULL UPDATED HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- ✅ Google AdSense Code -->
+  <!-- ✅ Google AdSense Code -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8984164277546465"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Convert any text, Word, Excel, or image file into a high-quality PDF instantly with our powerful and easy-to-use online converter." />
+  <meta name="description"
+    content="Convert any text, Word, Excel, or image file into a high-quality PDF instantly with our powerful and easy-to-use online converter." />
+  <meta name="google-site-verification" content="google519489fa40efdbe8.html" />
   <title>Ultimate File to PDF Converter</title>
-<meta name="google-site-verification" content="google519489fa40efdbe8.html" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.3.1/docx.min.js"></script>
   <style>
-    body.dark { background-color: #111827; color: #fff; }
-    .drop-zone:hover { border-color: #2563eb; }
+    body.dark {
+      background-color: #111827;
+      color: #fff;
+    }
+
+    .drop-zone:hover {
+      border-color: #2563eb;
+    }
   </style>
 </head>
 
@@ -31,74 +39,112 @@
     <section class="my-8">
       <h2 class="text-2xl font-bold mb-4">Why Use This Tool?</h2>
       <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-        This free online tool enables fast, secure, and high-quality conversion of a wide variety of file formats to PDF — including .txt, .docx, .xlsx, .csv, .json, and image formats like .png, .jpg, and .jpeg. Ideal for students, professionals, and businesses who need quick conversion without installing software. All conversions are handled securely in-browser.
+        This online tool offers instant PDF conversion for various file formats including .txt, .docx, .xlsx, .csv, .json, and image formats like .png, .jpg, and .jpeg. Ideal for students, freelancers, professionals, and anyone needing quick PDF generation with data privacy. No file uploads to servers—conversion happens in your browser!
       </p>
       <ul class="mt-4 list-disc pl-6 text-gray-700 dark:text-gray-300">
-        <li>No file uploads – conversions are done locally for privacy</li>
-        <li>Supports multiple formats including Word, Excel, and images</li>
-        <li>Mobile-friendly, responsive design</li>
-        <li>Dark mode support</li>
-        <li>Drag & Drop interface for ease of use</li>
-        <li>Success message with animated confirmation</li>
+        <li>Secure browser-based conversions</li>
+        <li>Supports multiple file formats</li>
+        <li>Mobile-friendly design</li>
+        <li>Dark mode toggle</li>
+        <li>Drag & Drop interface</li>
+        <li>Instant download with confirmation</li>
+        <li>Free to use with no sign-up required</li>
       </ul>
     </section>
 
     <!-- Conversion Area -->
     <section class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-8">
       <h2 class="text-xl font-semibold mb-4">Convert Your File</h2>
-      <div id="drop-zone" class="drop-zone border-4 border-dashed border-gray-400 p-10 text-center cursor-pointer rounded-lg transition duration-300">
-        <p>Drag and drop your file here, or <label class="text-blue-500 underline cursor-pointer">click to upload<input type="file" id="fileInput" hidden /></label></p>
+      <div id="drop-zone"
+        class="drop-zone border-4 border-dashed border-gray-400 p-10 text-center cursor-pointer rounded-lg transition duration-300">
+        <p>Drag and drop your file here, or <label class="text-blue-500 underline cursor-pointer">click to upload<input
+              type="file" id="fileInput" hidden /></label></p>
         <p class="text-sm text-gray-500 mt-2">Supported: .txt, .docx, .xlsx, .csv, .jpg, .jpeg, .png</p>
       </div>
       <div id="file-name" class="mt-4 text-sm text-green-600 font-medium"></div>
-      <button id="convertBtn" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Convert to PDF</button>
+      <button id="convertBtn"
+        class="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Convert to PDF</button>
       <div id="loader" class="hidden mt-4 text-blue-600">Converting...</div>
       <div id="successMsg" class="hidden mt-4 text-green-600">✅ PDF generated and downloaded!</div>
     </section>
 
-    <!-- FAQ and Additional Info -->
+    <!-- FAQ -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">FAQs</h2>
       <div class="grid gap-4">
         <div>
-          <h3 class="font-semibold">Q: Is my data secure?</h3>
-          <p class="text-gray-700 dark:text-gray-300">Yes, all conversions happen in your browser. Your files never leave your device.</p>
+          <h3 class="font-semibold">Q: Is this free?</h3>
+          <p class="text-gray-700 dark:text-gray-300">Yes! 100% free and works in your browser with no login required.</p>
         </div>
         <div>
-          <h3 class="font-semibold">Q: Can I convert images?</h3>
-          <p class="text-gray-700 dark:text-gray-300">Yes! You can drag and drop .jpg, .jpeg, or .png files and convert them to PDFs instantly.</p>
+          <h3 class="font-semibold">Q: What files are supported?</h3>
+          <p class="text-gray-700 dark:text-gray-300">Text, Word, Excel, CSV, JSON, JPG, PNG, and more.</p>
         </div>
         <div>
-          <h3 class="font-semibold">Q: Do I need to install anything?</h3>
-          <p class="text-gray-700 dark:text-gray-300">No installation required — it's fully browser-based and mobile-friendly.</p>
+          <h3 class="font-semibold">Q: Will I lose my file?</h3>
+          <p class="text-gray-700 dark:text-gray-300">No, all conversions are done on your device. We never upload your
+            files.</p>
         </div>
       </div>
     </section>
 
-    <!-- Advertisement Section -->
+    <!-- 🔐 Privacy Policy (embedded) -->
+    <section class="my-12">
+      <h2 class="text-2xl font-bold mb-4">Privacy Policy</h2>
+      <p class="mb-4">
+        Your privacy is important to us. This policy outlines how we handle your information on our site,
+        <strong>Ultimate File to PDF Converter</strong>.
+      </p>
+      <h3 class="text-xl font-semibold mt-6 mb-2">1. Information We Collect</h3>
+      <p class="mb-4">
+        We do not collect, store, or transmit any personal information. Files you upload for conversion are processed
+        directly in your browser and never sent to any server.
+      </p>
+      <h3 class="text-xl font-semibold mt-6 mb-2">2. Use of Cookies</h3>
+      <p class="mb-4">
+        We use third-party services like Google AdSense to display ads. These services may use cookies to personalize
+        your ad experience based on your previous interactions. You can disable cookies in your browser settings.
+      </p>
+      <h3 class="text-xl font-semibold mt-6 mb-2">3. Google AdSense</h3>
+      <p class="mb-4">
+        Google, as a third-party vendor, uses cookies to serve ads on this site. Google’s use of advertising cookies
+        enables it and its partners to serve ads based on your visit to this and other websites.<br />
+        You may opt out of personalized advertising by visiting
+        <a href="https://www.google.com/settings/ads" class="text-blue-600 underline">Google Ads Settings</a>.
+      </p>
+      <h3 class="text-xl font-semibold mt-6 mb-2">4. File Security</h3>
+      <p class="mb-4">
+        All file conversions happen locally in your browser. We do not upload, view, or store your files. Once your PDF
+        is generated, your original file remains private and untouched.
+      </p>
+      <h3 class="text-xl font-semibold mt-6 mb-2">5. Your Rights</h3>
+      <p class="mb-4">
+        As a user, you have the right to know how your data is used. Since we do not store personal information or
+        files, there is no identifiable data held by us.
+      </p>
+      <h3 class="text-xl font-semibold mt-6 mb-2">6. Contact</h3>
+      <p class="mb-4">
+        If you have any questions or concerns about this policy, you can contact us at:<br />
+        📧 <a href="mailto:support@example.com" class="text-blue-600 underline">support@example.com</a>
+      </p>
+      <p class="mt-8 text-sm text-gray-500">Last updated: July 2025</p>
+    </section>
+
+    <!-- Ads Section -->
     <section class="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg text-center mb-8">
       <h2 class="text-lg font-bold mb-2">Sponsored Content</h2>
-      <p class="text-sm text-gray-600 dark:text-gray-300">Advertise your product or website here to reach thousands of daily users!</p>
-      <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Advertise your product here and reach thousands of users
+        daily!</p>
+      <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="bg-white p-4 rounded shadow">
           <img src="https://via.placeholder.com/150" alt="Ad 1" class="w-full rounded mb-2">
-          <p class="font-semibold">Example Product</p>
-          <a href="#" class="text-blue-600 text-sm">Visit Now →</a>
+          <p class="font-semibold">Ad Space</p>
         </div>
         <div class="bg-white p-4 rounded shadow">
           <img src="https://via.placeholder.com/150" alt="Ad 2" class="w-full rounded mb-2">
-          <p class="font-semibold">Partner Site</p>
-          <a href="#" class="text-blue-600 text-sm">Check it Out →</a>
+          <p class="font-semibold">Advertise Here</p>
         </div>
       </div>
-    </section>
-
-    <!-- Additional 1000-char info -->
-    <section class="mt-12">
-      <h2 class="text-2xl font-bold mb-4">More About This Tool</h2>
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-        This converter is built to be a one-stop solution for professionals, students, and casual users who often need to convert various file types into PDF without hassle. Whether you’re preparing reports, archiving content, or sending documents securely, PDFs are universal and preserve formatting perfectly. By offering this tool online and making it completely browser-based, we eliminate the need for installations or security risks. This tool also supports multi-language setup, allowing for global usability. Future updates include email-to-PDF automation, real-time collaboration via login, and even watermarking features for document protection. We care about your workflow, and this site is designed to be your reliable daily tool.
-      </p>
     </section>
   </main>
 
@@ -173,6 +219,7 @@
         loader.classList.add('hidden');
         successMsg.classList.remove('hidden');
       };
+
       if (['xlsx', 'csv'].includes(currentFile.name.split('.').pop().toLowerCase())) {
         reader.readAsBinaryString(currentFile);
       } else {
